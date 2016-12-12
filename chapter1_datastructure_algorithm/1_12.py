@@ -14,5 +14,14 @@ from collections import Counter
 word_counts = Counter(words)
 print(word_counts)
 # 出现频率最高的3个单词
-top_three = word_counts.most_common()
+top_three = word_counts.most_common(3)
 print(top_three)
+
+print(word_counts['not'])
+
+morewords = ['why','are','you','not','looking','in','my','eyes']
+# for word in morewords:
+#     word_counts[word] += 1
+word_counts.update(morewords)
+word_counts.update({'why':1})
+print(word_counts)
