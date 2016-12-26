@@ -58,6 +58,7 @@ month, day, year = m.groups()
 print("# text = 'Today is 11/27/2012. PyCon starts 3/13/2013.'")
 text = 'Today is 11/27/2012. PyCon starts 3/13/2013.'
 # findall() 方法会搜索文本并以列表形式返回所有的匹配。
+datepat = re.compile(r'(\d+)/(\d+)/(\d+)')
 print(type(datepat.findall(text)))
 print(datepat.findall(text))
 for month, day, year in datepat.findall(text):
