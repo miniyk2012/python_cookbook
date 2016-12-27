@@ -17,5 +17,9 @@ print(comment.findall(text2))
 comment = re.compile(r'/\*((?:.|\n)*?)\*/')  # (?:.|\n) 指定了一个非捕获组 (也就是它定义了一个仅仅用来做匹配，而不能通过单独捕获或者编号的组)
 print(comment.findall(text2))
 
+# re.compile() 函数接受一个标志参数叫 re.DOTALL ，在这里非常有用。 它可以让正则表达式中的点(.)匹配包括换行符在内的任意字符。
+print('re.DOTALL')
+comment = re.compile(r'/\*(.*?)\*/', re.DOTALL)
+print(comment.findall(text2))
 
 
