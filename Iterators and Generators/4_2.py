@@ -42,7 +42,7 @@ if __name__ == '__main__':
     print(next(r))
     print(next(r))
 
-    
+
     print('3')
     r = root.__iter__()
     print(r.__next__())
