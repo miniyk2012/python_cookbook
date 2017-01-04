@@ -25,4 +25,4 @@ def countdown(n):
 # countdown(10000000)
 
 from timeit import timeit
-print(timeit('math.sqrt(2)', 'import math'))  # default_number = 1000000
+print timeit('math.sqrt(2)', 'import math')  # default_number = 1000000
